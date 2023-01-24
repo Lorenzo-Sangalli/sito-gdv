@@ -31,7 +31,7 @@
 */
 .sideImage1{
   flex-basis: 600%;
-  max-width: 300%;
+  max-width: 500%;
   object-position: right;
   bottom: 350px;
   left: 100px;
@@ -50,6 +50,69 @@
     img.side {
         display: none !important;
     }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.innerCard h{
+  margin-top: 14px;
+}
+
+.innerCard{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 13px 20px 20px;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+.card:hover .innerCard{
+  opacity: 0.8;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 /*
