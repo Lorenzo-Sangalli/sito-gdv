@@ -33,7 +33,6 @@
   flex-basis: 600%;
   max-width: 500%;
   object-position: right;
-  bottom: 350px;
   left: 100px;
   margin-left: 10px;
   display: flex;
@@ -46,7 +45,7 @@
   left: 20px; 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     img.side {
         display: none !important;
     }
