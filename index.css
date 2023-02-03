@@ -49,6 +49,13 @@
     img.side {
         display: none !important;
     }
+    .sideImage1 {
+      max-width: 0%;
+    }
+    .firstText {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
 }
 
 * {
