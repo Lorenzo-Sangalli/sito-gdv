@@ -10,3 +10,22 @@
     background-image: url('horizontal.jpg');
     background-size: cover;
   }
+
+.cpm {
+    width: 70vw;
+    height: 60vh;
+    background-image: url('5per1000.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+h1{
+    font-size: 45px;
+    padding-left: 20px;
+}
+
+.p1{
+    font-size: 20px;
+    padding-left: 20px;
+}
